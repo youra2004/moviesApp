@@ -1,0 +1,41 @@
+.header {
+  width: 100%;
+  height: 50px;
+}
+.links {
+  display: inline-block;
+  padding-top: 15px;
+  margin-left: 18%;
+}
+.links a {
+  text-decoration: none;
+  position: relative;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.links a::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  height: 2px;
+  transition: width 0.3s ease-out;
+}
+.links a:hover:after,
+.links a:focus:after {
+  width: 100%;
+}
+.navbar {
+  display: inline-block;
+  margin-left: 30%;
+}
+.navbar button {
+  border-radius: 4px;
+  height: 35px;
+  margin-right: 10px;
+}
+.navbar input {
+  border-radius: 4px;
+  height: 35px;
+}
